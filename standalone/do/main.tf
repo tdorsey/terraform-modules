@@ -1,4 +1,8 @@
-variable "digitalocean_token" {}
+
+variable "digitalocean_token" {
+  default = "xxx"
+}
+
 
 variable "rancher_version_tag" {
   default = "stable"
@@ -17,6 +21,4 @@ module "digital-ocean" {
   instance_type      = "server"
 }
 
-output "server-ip" {
-  value = "${module.digital-ocean.server-ip}"
-}
+

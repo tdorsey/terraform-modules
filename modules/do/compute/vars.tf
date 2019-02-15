@@ -6,6 +6,14 @@ variable "instance_type" {
   default = "node"
 }
 
+variable "instance_name" {
+  default = "sapling"
+}
+
+variable "domain_name" {
+  default = "rtd3.me"
+}
+
 variable "docker_cmd" {}
 
 variable "ssh_keys" {
@@ -17,9 +25,9 @@ variable "node_count" {
 }
 
 variable "do_region" {
-  default = "sfo1"
+  default = "nyc3"
 }
 
 variable "do_droplet_size" {
-  default = "2gb"
+  default = "1gb"
 }
