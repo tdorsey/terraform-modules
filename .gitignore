@@ -1,9 +1,10 @@
 *tfstate*
+*tfvars*
 .terraform
 *.swp
 *.plan
 *-env/*
 *.key
 *.crt
+*.log
 .DS_Store
-terraform.tfvars
